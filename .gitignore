@@ -1,0 +1,37 @@
+﻿# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# ── Secrets / DB credentials ──────────────────────────────────
+.env
+config.py
+
+# ── Large auto-generated CSVs (run generate_data.py to recreate)
+data/users.csv
+data/prompt_history.csv
+
+# ── LaTeX build artifacts (run build_report.bat to recreate) ──
+report/build/
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.synctex.gz
+
+# ── OS junk ───────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+
+.env
+"node_modules/"
