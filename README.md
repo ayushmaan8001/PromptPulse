@@ -46,7 +46,7 @@ Python simulation  →  PostgreSQL (3NF schema)  →  SQL analytics  →  Power 
 | **Database** | PostgreSQL 18 |
 | **Data Pipeline** | Python 3.12 · Faker · NumPy · Pandas |
 | **DB Connector** | psycopg2-binary |
-| **Analytics** | SQL — CTEs · Window Functions · Ordered-Set Aggregates |
+| **Analytics** | SQL CTEs · Window Functions · Ordered-Set Aggregates |
 | **Dashboard** | Power BI Desktop |
 
 ---
