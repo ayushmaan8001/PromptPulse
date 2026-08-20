@@ -15,7 +15,7 @@
 
 ## The Problem
 
-Organisations run GPT-4o, Claude, Gemini, Copilot, and DeepSeek across every team — but have zero visibility into:
+Organisations run GPT-4o, Claude, Gemini, Copilot, and DeepSeek across every team but have zero visibility into:
 
 - Which model actually delivers the best task completion per dollar spent?
 - Which department is burning the most tokens?
@@ -30,7 +30,7 @@ Most teams make six-figure AI subscription decisions based on gut feel.
 
 ## How It Works
 
-Every AI interaction gets logged into a normalised PostgreSQL schema. A suite of 23 advanced SQL queries then extracts actionable intelligence — model benchmarks, department spend, adoption trends, latency profiles, and quality correlations — all surfaced through a live Power BI dashboard.
+Every AI interaction gets logged into a normalised PostgreSQL schema. A suite of 23 advanced SQL queries then extracts actionable intelligence model benchmarks, department spend, adoption trends, latency profiles, and quality correlations, all surfaced through a live Power BI dashboard.
 
 ```
 Python simulation  →  PostgreSQL (3NF schema)  →  SQL analytics  →  Power BI dashboard
