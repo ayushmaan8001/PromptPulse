@@ -87,7 +87,7 @@ PromptPulse/
 
 ```bash
 # 1. Clone
-git clone https://github.com/YOUR_USERNAME/PromptPulse.git
+git clone https://github.com/ayushmaan8001/PromptPulse.git
 cd PromptPulse
 
 # 2. Install Python dependencies
