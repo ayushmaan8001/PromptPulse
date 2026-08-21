@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
 
 # PromptPulse
 
@@ -69,7 +69,8 @@ PromptPulse/
 │   ├── pair3_tech_heavy/
 │   └── pair4_q4_surge/
 ├── dashboard/
-│   └── PromptPulse.pbix           Power BI dashboard (live PostgreSQL connection)
+│   ├── PromptPulse.pbix           Power BI dashboard (live PostgreSQL connection)
+│   └── POWERBI_SETUP.md           Power BI connection setup guide
 ├── .env.example                   Credential config template
 └── requirements.txt
 ```
@@ -94,7 +95,8 @@ cd PromptPulse
 pip install -r requirements.txt
 
 # 3. Configure credentials
-cp .env.example .env
+cp .env.example .env          # Mac/Linux
+copy .env.example .env        # Windows CMD
 # Open .env and set DB_PASSWORD to your PostgreSQL password
 ```
 
@@ -141,7 +143,7 @@ python data/insert_data.py
                         └──────────────────────┘
 ```
 
-5 B-Tree indexes on high-frequency filter columns (`created_at`, `user_id`, `model_id`, `category_id`, `satisfaction_rating`).
+5 B-Tree indexes on high-frequency filter columns (`created_at`, `user_id`, `model_id`, `category_id`, and a composite index on `(model_id, created_at)`).
 
 ---
 
@@ -166,10 +168,10 @@ Four pre-built scenario datasets for testing without running the generator:
 
 | Scenario | Users | Records | Use Case |
 |:---|:---:|:---:|:---|
-| `pair1_small_scale` | 100 | 1,000 | Baseline small team |
+| `pair1_small_scale` | 100 | 2,000 | Baseline small team |
 | `pair2_large_scale` | 1,000 | 25,000 | Large enterprise load |
 | `pair3_tech_heavy` | 500 | 10,000 | Engineering-dominant usage pattern |
-| `pair4_q4_surge` | 500 | 10,000 | Q4 adoption spike simulation |
+| `pair4_q4_surge` | 300 | 5,000 | Q4 adoption spike simulation |
 
 Load any pair by replacing CSVs in `data/` and re-running `insert_data.py`.
 
