@@ -127,7 +127,7 @@ python data/insert_data.py
 
 ```
 ┌─────────────────┐     ┌──────────────────────┐     ┌────────────────────┐
-│     users       │     │    prompt_history     │     │    ai_models       │
+│     users       │     │    prompt_history    │     │    ai_models       │
 │─────────────────│     │──────────────────────│     │────────────────────│
 │ user_id (PK)    │──┐  │ prompt_id (PK)       │  ┌──│ model_id (PK)      │
 │ full_name       │  └──│ user_id (FK)         │  │  │ model_name         │
